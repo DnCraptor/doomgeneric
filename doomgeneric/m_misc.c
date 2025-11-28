@@ -18,7 +18,7 @@
 //
 
 
-#include <stdio.h>
+///#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
@@ -48,17 +48,15 @@
 #include "w_wad.h"
 #include "z_zone.h"
 
+#include "ff.h"
+
 //
 // Create a directory
 //
 
 void M_MakeDirectory(char *path)
 {
-#ifdef _WIN32
-    mkdir(path);
-#else
-    mkdir(path, 0755);
-#endif
+    f_mkdir(path);
 }
 
 // Check if a file exists

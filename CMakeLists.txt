@@ -46,8 +46,8 @@ set(PSRAM_MHZ 100)
 
 set (PORT_VERSION "1.09")
 
-#set (MURM ON)
-set (MURM2 ON)
+set (MURM ON)
+#set (MURM2 ON)
 #set (PICO_PC ON)
 #set (PICO_DV ON)
 #set (ZERO2 ON)
@@ -211,6 +211,7 @@ file(GLOB_RECURSE SRC
     ${PROJECT_SOURCE_DIR}/doomgeneric/main.cpp
     ${PROJECT_SOURCE_DIR}/doomgeneric/mixer.cpp
     ${PROJECT_SOURCE_DIR}/doomgeneric/sys_pico.c
+    ${PROJECT_SOURCE_DIR}/doomgeneric/test_pins.c
 )
 
 message(STATUS "Add source files:")

@@ -23,12 +23,11 @@ typedef uint32_t pixel_t;
 
 #endif  // CMAP256
 
-
-extern pixel_t* DG_ScreenBuffer;
-
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+extern pixel_t* DG_ScreenBuffer;
 
 void doomgeneric_Create(int argc, char **argv);
 void doomgeneric_Tick();
